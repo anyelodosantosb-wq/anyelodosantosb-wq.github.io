@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anyelo Do Santos Blanco Hancco – Página Personal</title>
+  <meta name="description" content="Página personal académica/profesional de Anyelo Do Santos Blanco Hancco." />
+  <style>
+    :root{--fg:#1b1f24;--bg:#ffffff;--muted:#5e6b7a;--link:#0b63ff;--accent:#6b8afd;--card:#f6f8fa;--border:#e6e8eb;}
+    @media (prefers-color-scheme: dark){
+      :root{--fg:#e6edf3;--bg:#0d1117;--muted:#8b949e;--link:#4dabff;--accent:#7aa2ff;--card:#161b22;--border:#2d333b;}
+    }
+    *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial}
+    a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+    h1,h2,h3{line-height:1.2;margin:0 0 .5rem}h1{font-size:2rem}h2{font-size:1.4rem;margin-top:2rem;border-bottom:1px solid var(--border);padding-bottom:.35rem}h3{font-size:1.1rem;margin-top:1rem}
+    p,ul,ol{margin:.5rem 0 1rem}ul{padding-left:1.2rem}
+    .wrap{max-width:980px;margin:0 auto;padding:24px}
+    header{display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:center;margin-bottom:10px}
+    header img{width:120px;height:120px;border-radius:10px;object-fit:cover;border:1px solid var(--border);background:var(--card)}
+    nav{display:flex;flex-wrap:wrap;gap:10px;margin:.25rem 0 1.25rem}
+    nav a{padding:.35rem .6rem;border:1px solid var(--border);border-radius:999px;background:var(--card)}
+    .list-tight li{margin:.3rem 0}.muted{color:var(--muted)}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;margin:.75rem 0}
+    footer{margin:2rem 0 1rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <img src="IMG_8575.jpeg" alt="Foto de Anyelo Do Santos Blanco Hancco" />
+    <div>
+      <h1>Anyelo Do Santos Blanco Hancco</h1>
+      <p class="muted">Estudiante de Administración de Negocios · Universidad Católica San Pablo (UCSP) · Arequipa, Perú</p>
+      <nav aria-label="Secciones">
+        <a href="#presentacion">Presentación</a>
+        <a href="#intereses">Áreas de interés</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#redes">Red de contactos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="presentacion" class="card">
+    <h2>Presentación</h2>
+    <p>Hola, soy <strong>Anyelo Do Santos Blanco Hancco</strong>. Estudio <em>Administración de Negocios</em> en la <strong>Universidad Católica San Pablo</strong>. Me interesa construir proyectos que mezclen estrategia, marketing y tecnología con un enfoque práctico. Disfruto convertir ideas en acciones: ya sea en clase, en trabajos aplicados o en iniciativas con impacto real.</p>
+  </section>
+
+  <section id="intereses">
+    <h2>Áreas de interés</h2>
+    <ul class="list-tight">
+      <li>Emprendimiento e innovación empresarial</li>
+      <li>Estrategia y marketing digital</li>
+      <li>Tecnología aplicada a los negocios</li>
+      <li>Videojuegos y creatividad como fuente de innovación</li>
+    </ul>
+  </section>
+
+  <section id="cursos">
+    <h2>Cursos actuales</h2>
+    <ul class="list-tight">
+      <li>Cálculo en una variable</li>
+      <li>Historia II</li>
+      <li>Filosofía</li>
+      <li>Antropología</li>
+      <li>Pensamiento computacional</li>
+      <li>Liderazgo</li>
+      <li>Comportamiento del consumidor</li>
+    </ul>
+  </section>
+
+  <section id="redes" class="card">
+    <h2>Red de contactos</h2>
+    <p class="muted">Personas que quiero agregar o mencionar más adelante:</p>
+    <ul class="list-tight">
+      <li>• [Nombre de persona 1]</li>
+      <li>• [Nombre de persona 2]</li>
+      <li>• [Nombre de persona 3]</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p><strong>Email:</strong> <a href="mailto:anyelodosantosbh@gmail.com">anyelodosantosbh@gmail.com</a><br/>
+       <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anyelo-do-santos-blanco-hancco-1b9b01385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener">Perfil profesional</a><br/>
+       <strong>Ciudad:</strong> Arequipa, Perú
+    </p>
+  </section>
+
+  <footer>
+    <small>© <span id="y"></span> Anyelo Do Santos Blanco Hancco. Última actualización: <time id="updated"></time>. · <a href="#top">Volver arriba</a></small>
+  </footer>
+</div>
+
+<script>
+  document.getElementById("y").textContent = new Date().getFullYear();
+  const d = new Date();
+  document.getElementById("updated").textContent = d.toISOString().slice(0,10);
+</script>
+</body>
+</html>
